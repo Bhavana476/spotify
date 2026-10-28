@@ -1,0 +1,99 @@
+{
+  "clients": 10,
+  "base": "http://127.0.0.1:8000",
+  "apiLatencyMs": {
+    "p50": 22.38,
+    "p95": 43.35,
+    "n": 100,
+    "target_p95": 200
+  },
+  "aiSegueLatencyMs": {
+    "p50": 25.68,
+    "p95": 88.25,
+    "n": 30,
+    "target_p95": 3000,
+    "generator": "template"
+  },
+  "concurrentVotes": {
+    "votes": 10,
+    "finalVersionsSeen": [
+      26
+    ],
+    "allClientsAgreeOnFinalOrder": true
+  },
+  "queueSyncDriftMs": {
+    "p50": 17.25,
+    "p95": 17.38,
+    "max": 17.38,
+    "updatesMeasured": 10,
+    "target": 100
+  },
+  "fanoutMs": {
+    "p95": 88.42,
+    "max": 93.51,
+    "target": 500
+  },
+  "soundclash": {
+    "candidates": [
+      "t_2002",
+      "t_2004"
+    ],
+    "winner": "t_2004",
+    "tally": {
+      "t_2002": 4,
+      "t_2004": 6
+    },
+    "allClientsSameResult": true,
+    "banter": "Soundclash settled! \"Afterglow Protocol\" by Lumen Shift takes it with 6 of 10 votes. The vocal hook is the artist's sister humming, pitched up seven semitones."
+  },
+  "liveSegue": {
+    "text": "Smooth handoff coming up: out of \"Night Drive\" into \"Afterglow Protocol\" by Lumen Shift, flipping to the relative major, 8B, at 128 BPM. Fun fact: The vocal hook is the artist's sister humming, pitched up seven semitones.",
+    "relatedTrackId": "t_2004",
+    "sourceEvents": [
+      "evt_2004_3"
+    ],
+    "kind": "segue",
+    "ts": 1793160313.437213
+  },
+  "qa": {
+    "question": "where's this sample from?",
+    "body": "On \"Night Drive\" by Nova Circuit: The vocal chop is sampled from a 1981 soul record the producer found in a Lisbon flea market.",
+    "sourceEvents": [
+      "evt_2001_1"
+    ],
+    "grounded": true
+  },
+  "sentimentShift": {
+    "afterPositiveBurst": {
+      "rollingScore": 0.9333,
+      "windowSeconds": 30.0,
+      "sampleSize": 10
+    },
+    "afterNegativeBurst": {
+      "rollingScore": 0.2839,
+      "windowSeconds": 30.0,
+      "sampleSize": 40
+    },
+    "secondsToReflect": 2.09
+  },
+  "reconnect": {
+    "resyncMs": 25.1,
+    "chatHistoryRestored": 41
+  },
+  "analytics": {
+    "durationSeconds": 8.3,
+    "startedAt": 1793160310.2109005,
+    "endedAt": 1793160318.5185935,
+    "peakConcurrentParticipants": 10,
+    "soundclashBattles": 1,
+    "aiQuestionsAsked": 1,
+    "chatMessages": 40,
+    "votes": 10,
+    "tracksPlayed": 1,
+    "aiSegues": 1,
+    "humanOverrideSegues": 0,
+    "aiSegueLatencyP95Ms": 0.1,
+    "eventCount": 118,
+    "sentimentTimelinePoints": 3
+  }
+}
